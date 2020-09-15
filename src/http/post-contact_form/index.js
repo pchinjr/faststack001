@@ -13,12 +13,12 @@ let sendCourier = async function (req) {
   }
 
   let data = {
-    event: `${process.env.COURIER_NOTIFICATION_ID}`,
+    event: 'praisecage',
     recipient: 'pchinjr',
     profile: {
       slack: {
         access_token: `${process.env.SLACK_TOKEN}`,
-        email: 'pchinjr@gmail.com'
+        email: 'pchinjr@gmail.com',
       }
     },
     data: {
