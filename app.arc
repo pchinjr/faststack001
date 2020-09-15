@@ -4,4 +4,4 @@ begin-app
 @static
 
 @http
-post contact-form 
+post /contact-form 
