@@ -5,6 +5,8 @@ let arc = require('@architect/functions')
 let sendCourier = async function (req) {
   let body = req.body
 
+  console.log(body)
+
   let url = 'https://api.trycourier.app/send'
 
   let headers = {
@@ -25,7 +27,8 @@ let sendCourier = async function (req) {
       name: `${body.name}`,
       email: `${body.email}`,
       subject: `${body.subject}`,
-      message: `${body.message}`
+      message: `${body.message}`,
+      urgent: `${body.urgent}`
     }
   }
 
